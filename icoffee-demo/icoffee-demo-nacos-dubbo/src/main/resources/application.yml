@@ -1,0 +1,14 @@
+server:
+  port: 8380
+
+spring:
+  application:
+    name: icoffee-cloud-demo-nacos-dubbo
+  profiles:
+    active: @PROFILE@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
