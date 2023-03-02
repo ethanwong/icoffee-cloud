@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.addr}
+        file-extension: yml
+        namespace: ${nacos.namespace}
+      discovery:
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace}
+
+nacos:
+  addr: 127.0.0.1:8848
+  namespace: icoffee-cloud
