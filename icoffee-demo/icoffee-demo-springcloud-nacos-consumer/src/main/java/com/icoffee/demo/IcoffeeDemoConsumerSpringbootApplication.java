@@ -11,6 +11,9 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 public class IcoffeeDemoConsumerSpringbootApplication {
 
+
+
+
 	public static void main(String[] args) {
 		SpringApplication.run(IcoffeeDemoConsumerSpringbootApplication.class, args);
 	}

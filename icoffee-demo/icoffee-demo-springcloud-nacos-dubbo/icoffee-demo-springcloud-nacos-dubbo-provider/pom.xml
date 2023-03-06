@@ -51,6 +51,9 @@
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
+        <!--
+        https://github.com/alibaba/spring-cloud-alibaba/blob/spring-cloud-dubbo/spring-cloud-alibaba-starters/spring-cloud-starter-dubbo/README_CN.md
+        -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-dubbo</artifactId>

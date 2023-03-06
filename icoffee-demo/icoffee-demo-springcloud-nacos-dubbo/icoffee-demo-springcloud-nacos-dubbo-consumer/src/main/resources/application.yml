@@ -13,8 +13,8 @@ dubbo:
   protocol:
     port: -1  #port为协议端口（-1 表示自增端口，从 20880 开始）
     name: dubbo
-  registry:
-    address: spring-cloud://127.0.0.1
+#  registry:
+#    address: nacos://${nacos.server-addr} #spring-cloud://127.0.0.1
   cloud:
     subscribed-services: icoffee-demo-springcloud-nacos-dubbo-provider
 

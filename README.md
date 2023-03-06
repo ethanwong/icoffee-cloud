@@ -29,7 +29,9 @@
 ```
 Can't create adaptive extension interface org.apache.dubbo.rpc.Protocol, cause: Failed to compile class, cause: null, class: org.apache.dubbo.rpc.Protocol$Adaptive, code:  package org.apache.dubbo.rpc
 ```
-
+```
+java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module
+```
 JDK17运行程序的时候添加jvm参数--add-opens java.base/java.lang=ALL-UNNAMED
 
 https://blog.csdn.net/friendlytkyj/article/details/124054034
