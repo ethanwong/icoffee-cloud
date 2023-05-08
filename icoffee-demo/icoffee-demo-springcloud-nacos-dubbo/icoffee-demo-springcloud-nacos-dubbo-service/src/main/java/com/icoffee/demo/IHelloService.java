@@ -1,4 +1,4 @@
-package com.icoffee.demo.demo;
+package com.icoffee.demo;
 
 public interface IHelloService {
 

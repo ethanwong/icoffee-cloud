@@ -72,6 +72,8 @@
 			<artifactId>spring-cloud-loadbalancer</artifactId>
 		</dependency>
 
+
+
     </dependencies>
 
 	<dependencyManagement>

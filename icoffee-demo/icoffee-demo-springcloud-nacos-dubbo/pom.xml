@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.icoffee</groupId>
+    <groupId>com.icoffee.demo</groupId>
     <artifactId>icoffee-demo-springcloud-nacos-dubbo</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>

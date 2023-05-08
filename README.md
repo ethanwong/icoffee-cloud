@@ -1,13 +1,17 @@
 # icoffee-cloud
-命名为"icoffee-cloud"，"爱咖啡微服务系统"，因为咖啡和JAVA比较搭配；系统基于SpringBoot、SpringCloud、OAuth2、MyBatisPlus的管理系统
+"icoffee-cloud"，"爱咖啡微服务"；基于SpringBoot、SpringCloud、OAuth2、MyBatisPlus的框架
 
 ## Requirements
 - JAVA 17
 - Maven 3.8.1
 - Tomcat 10.0
-- Springboot 2
-- Springcloud 2021
-- Springcloud alibaba 2021
+- Springboot 2.7.9
+- SpringCloud 2021.0.1.0
+- SpringCloudAlibaba 2021.0.4.0
+- Nacos 2.2.0
+- Dubbo 2.7.23
+
+_依赖版本需要对应，否则会冲突_
 
 ## Module
 - icoffee-common:通用模块，存放基础封装类、工具,公共依赖等；
@@ -23,7 +27,10 @@
 
 ## 选用组件
 - Nacos 2.2 https://nacos.io/zh-cn/index.html
-
+```
+  startup.cmd -m standalone
+```
+![img.png](icoffee-doc/images/nacos-startup-img.png)
 ## 问题记录
 启动提示如下：
 ```

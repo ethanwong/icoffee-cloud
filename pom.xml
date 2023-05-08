@@ -21,6 +21,7 @@
         <module>icoffee-common</module>
         <module>icoffee-starter</module>
         <module>icoffee-core</module>
+        <module>icoffee-test</module>
     </modules>
 
     <properties>

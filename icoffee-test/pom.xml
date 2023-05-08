@@ -4,15 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.icoffee.demo</groupId>
-        <artifactId>icoffee-demo-springcloud-nacos-dubbo</artifactId>
+        <groupId>com.icoffee</groupId>
+        <artifactId>icoffee-cloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.icoffee.demo</groupId>
-    <artifactId>icoffee-demo-springcloud-nacos-dubbo-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>icoffee-test</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

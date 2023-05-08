@@ -1,4 +1,4 @@
-package com.icoffee.demo.demo.demo;
+package com.icoffee.demo;
 
 import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.boot.SpringApplication;
