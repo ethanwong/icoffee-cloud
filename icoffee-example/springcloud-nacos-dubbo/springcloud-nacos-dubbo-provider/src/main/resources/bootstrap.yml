@@ -5,6 +5,13 @@ spring:
         server-addr: ${nacos.server-addr}
         file-extension: yml
         namespace: ${nacos.namespace}
+        extension-configs:
+          # 以下配置需要动态刷新配置的配置文件，配置项优先级靠索引值大小，索引值越大的优先级越大
+          # [0]
+          - data-id: icoffee-demo-springcloud-nacos-dubbo-provider-dev.yml
+            refresh: true
+            group: DEFAULT_GROUP
+
       discovery:
         server-addr: ${nacos.server-addr}
         namespace: ${nacos.namespace}
@@ -12,3 +19,7 @@ spring:
 nacos:
   server-addr: 127.0.0.1:8848
   namespace: icoffee-cloud
+
+#common:
+#  application:
+#    name: ${spring.application.name}

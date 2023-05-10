@@ -25,7 +25,8 @@ _依赖版本需要对应，否则会冲突_
 ## 主要功能
 - 注册服务、发现服务、配置中心、权限控制、单点登录、RBAC模块
 
-## 选用组件
+## 组件选型
+### 注册中心、配置中心
 - Nacos 2.2 https://nacos.io/zh-cn/index.html Nacos安装依赖JDK
 ```
   startup.cmd -m standalone
