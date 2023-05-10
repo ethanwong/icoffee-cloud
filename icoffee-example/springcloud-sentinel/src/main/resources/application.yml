@@ -1,0 +1,16 @@
+server:
+  port: 8181
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  application:
+    name: springcloud-sentinel
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080

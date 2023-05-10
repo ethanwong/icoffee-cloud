@@ -8,18 +8,16 @@
 - Springboot 2.6.14
 - SpringCloud 2021.0.5
 - SpringCloudAlibaba 2021.0.5.0
-- Nacos 2.2.2
-- Dubbo 2.7.23
+- Nacos v2.2.2   https://github.com/alibaba/nacos/releases https://nacos.io/zh-cn/index.html
+- Sentinel v1.8.6 https://github.com/alibaba/Sentinel/releases  https://sentinelguard.io/zh-cn/
+- Dubbo v2.7.23
 
 _依赖版本需要对应，否则会冲突_
 
 ## Module
 - icoffee-common:通用模块，存放基础封装类、工具,公共依赖等；
-
 - icoffee-core:核心组件封装包；
-
 - icoffee-starter:引用启动模块；
-
 - icoffee-example:示例工程目录；
 
 ## 主要功能
@@ -31,7 +29,10 @@ _依赖版本需要对应，否则会冲突_
 ```
   startup.cmd -m standalone
 ```
+
 ![img.png](icoffee-doc/images/nacos-startup-img.png)
+
+访问地址:http://localhost:8848  nacos/ncaos
 
 ### Nacos通过MySQL启动
 `在mysql数据库中创建名称为nacos的数据库，导入数据表“nacos-server-2.2.2\nacos\conf\mysql-schema.sql”，创建账号密码，修改配置文件“nacos-server-2.2.2\nacos\conf\application.properties”，启动mysql数据库连接配置`
@@ -44,6 +45,12 @@ db.user.0=nacos
 db.password.0=nacos
 ```
 
+### Sentinel
+启动命令，默认账号密码为sentinel
+```
+java -Dserver.port=8080 -Dcsp.sentinel.dashboard.server=localhost:8080 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard.jar
+```
+访问地址:http://localhost:8080  sentinel/sentinel
 
 ## 问题记录
 启动提示如下：
