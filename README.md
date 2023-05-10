@@ -45,7 +45,8 @@ db.user.0=nacos
 db.password.0=nacos
 ```
 
-### Sentinel
+### 流量治理组件Sentinel
+https://sentinelguard.io/zh-cn/
 启动命令，默认账号密码为sentinel
 ```
 java -Dserver.port=8080 -Dcsp.sentinel.dashboard.server=localhost:8080 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard.jar
