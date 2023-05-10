@@ -1,14 +1,14 @@
 # icoffee-cloud
-"icoffee-cloud"，"爱咖啡微服务"；基于SpringBoot、SpringCloud、OAuth2、MyBatisPlus的框架
+"icoffee-cloud"，"爱咖啡微服务"；基于SpringBoot、SpringCloud、SpringCloudAlibaba、OAuth2、MyBatisPlus的框架
 
 ## Requirements
 - JAVA 17
 - Maven 3.8.1
 - Tomcat 10.0
-- Springboot 2.7.9
-- SpringCloud 2021.0.1.0
-- SpringCloudAlibaba 2021.0.4.0
-- Nacos 2.2.0
+- Springboot 2.6.14
+- SpringCloud 2021.0.5
+- SpringCloudAlibaba 2021.0.5.0
+- Nacos 2.2.2
 - Dubbo 2.7.23
 
 _依赖版本需要对应，否则会冲突_
@@ -20,7 +20,7 @@ _依赖版本需要对应，否则会冲突_
 
 - icoffee-starter:引用启动模块；
 
-- icoffee-demo:demo工程目录；
+- icoffee-example:示例工程目录；
 
 ## 主要功能
 - 注册服务、发现服务、配置中心、权限控制、单点登录、RBAC模块
@@ -32,7 +32,16 @@ _依赖版本需要对应，否则会冲突_
 ```
 ![img.png](icoffee-doc/images/nacos-startup-img.png)
 
-### Nacos注册中心信息持久化
+### Nacos通过MySQL启动
+`在mysql数据库中创建名称为nacos的数据库，导入数据表“nacos-server-2.2.2\nacos\conf\mysql-schema.sql”，创建账号密码，修改配置文件“nacos-server-2.2.2\nacos\conf\application.properties”，启动mysql数据库连接配置`
+
+```
+spring.sql.init.platform=mysql
+db.num=1
+db.url.0=jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+db.user.0=nacos
+db.password.0=nacos
+```
 
 
 ## 问题记录

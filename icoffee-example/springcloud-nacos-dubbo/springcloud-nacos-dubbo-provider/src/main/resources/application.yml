@@ -1,0 +1,26 @@
+server:
+  port: 8480
+
+spring:
+  application:
+    name: icoffee-demo-springcloud-nacos-dubbo-provider
+  profiles:
+    active: @PROFILE@
+  main:
+    allow-circular-references: true
+
+dubbo:
+  protocol:
+    port: -1  #port为协议端口（-1 表示自增端口，从 20880 开始）
+    name: dubbo
+#  registry:
+#    address: nacos://${nacos.server-addr}
+#    address: spring-cloud://127.0.0.1
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
