@@ -26,11 +26,15 @@ _依赖版本需要对应，否则会冲突_
 - 注册服务、发现服务、配置中心、权限控制、单点登录、RBAC模块
 
 ## 选用组件
-- Nacos 2.2 https://nacos.io/zh-cn/index.html
+- Nacos 2.2 https://nacos.io/zh-cn/index.html Nacos安装依赖JDK
 ```
   startup.cmd -m standalone
 ```
 ![img.png](icoffee-doc/images/nacos-startup-img.png)
+
+### Nacos注册中心信息持久化
+
+
 ## 问题记录
 启动提示如下：
 ```
