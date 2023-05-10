@@ -1,14 +1,21 @@
 server:
   port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 spring:
   application:
     name: nacos-provider
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace}
+
+nacos:
+  addr: 127.0.0.1:8848
+  namespace: icoffee-cloud

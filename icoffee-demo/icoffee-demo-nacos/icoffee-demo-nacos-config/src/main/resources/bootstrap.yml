@@ -2,11 +2,16 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: 127.0.0.1:8848
+        server-addr: ${nacos.addr}
         file-extension: yml
         #This configuration must be in the bootstrap.properties file.
         #The value of spring.cloud.nacos.config.namespace is the id of the namespace,
         #and the value of id can be retrieved from the Nacos console.
-        namespace: icoffee-demo
+        namespace: ${nacos.namespace}
+
+
+nacos:
+  addr: 127.0.0.1:8848
+  namespace: icoffee-demo
 
 
