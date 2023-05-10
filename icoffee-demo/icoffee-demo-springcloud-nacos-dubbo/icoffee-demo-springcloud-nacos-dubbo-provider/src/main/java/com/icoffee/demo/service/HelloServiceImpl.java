@@ -1,4 +1,4 @@
-package com.icoffee.demo;
+package com.icoffee.demo.service;
 
 import com.icoffee.demo.IHelloService;
 import org.apache.dubbo.config.annotation.DubboService;

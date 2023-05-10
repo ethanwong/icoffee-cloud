@@ -4,21 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.icoffee.demo</groupId>
-        <artifactId>icoffee-demo-springcloud-nacos-dubbo</artifactId>
+        <groupId>com.icoffee.demo.nacos</groupId>
+        <artifactId>icoffee-demo-nacos</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.icoffee.demo</groupId>
-    <artifactId>icoffee-demo-springcloud-nacos-dubbo-provider</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>com.icoffee.nacos</groupId>
+    <artifactId>icoffee-demo-nacos-config</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <dubbo.version>2.7.23</dubbo.version>
     </properties>
 
     <dependencies>
@@ -35,49 +33,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-        </dependency>
-
-        <!--
-        https://github.com/alibaba/spring-cloud-alibaba/blob/spring-cloud-dubbo/spring-cloud-alibaba-starters/spring-cloud-starter-dubbo/README_CN.md
-        -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-dubbo</artifactId>
-            <version>2021.0.1.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>${dubbo.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>30.1.1-jre</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.icoffee.demo</groupId>
-            <artifactId>icoffee-demo-springcloud-nacos-dubbo-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
-
 
     <profiles>
         <profile>
@@ -107,6 +63,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

@@ -13,8 +13,4 @@ public class SpringcloudNacodDubboProviderApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringcloudNacodDubboProviderApplication.class, args);
     }
-
-
-
-
 }

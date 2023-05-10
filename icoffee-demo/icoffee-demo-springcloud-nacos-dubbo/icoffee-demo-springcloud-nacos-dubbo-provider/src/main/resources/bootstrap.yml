@@ -5,6 +5,9 @@ spring:
         server-addr: ${nacos.server-addr}
         file-extension: yml
         namespace: ${nacos.namespace}
+        import:
+          - nacos:nacos-config-example.yml?refresh=true
+
       discovery:
         server-addr: ${nacos.server-addr}
         namespace: ${nacos.namespace}
