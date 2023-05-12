@@ -11,6 +11,7 @@
 - Nacos v2.2.2   https://github.com/alibaba/nacos/releases https://nacos.io/zh-cn/index.html
 - Sentinel v1.8.6 https://github.com/alibaba/Sentinel/releases  https://sentinelguard.io/zh-cn/
 - Dubbo v2.7.23
+- Arthas https://arthas.aliyun.com/
 
 _依赖版本需要对应，否则会冲突_
 
